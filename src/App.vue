@@ -2,7 +2,7 @@
   <div id="app">
     <headerColors :color="color"/>
     <colorPicker :colors="colors" v-on:pickColor="pickCol" />
-    <gridColors :colr="color"></gridColors>
+    <gridColors :color="color"></gridColors>
   </div>
 </template>
 
@@ -28,7 +28,7 @@ export default {
   methods: {
     pickCol(e) {
       this.color=e;
-      console.log(e);
+      
     }
   }
 };
